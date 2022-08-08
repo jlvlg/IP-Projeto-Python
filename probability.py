@@ -142,8 +142,6 @@ class ExtratorDeProbabilidades:
                 max_i = min(len(observed_data) - 1, max_i + 1) if probabilidade >= 0 else max_i - 1
         return result
 
-colorama.init()
-
 class Menu():
     def __init__(self, title, *options):
         self.title = title
@@ -198,6 +196,7 @@ class Menu():
 
 class GUI():
     def __init__(self):
+        colorama.init()
         self.__menu_1()
     
     def __exit(self):
